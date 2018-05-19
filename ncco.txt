@@ -1,19 +1,19 @@
 [
   {
     "action": "talk",
-    "text": "Please wait while we connect you"
+    "text": "Welcome to a Voice API I V R. ",
+    "voiceName": "Amy",
+    "bargeIn": false
   },
   {
-    "action": "connect",
-    "eventUrl": ["https://example.com/events"],
-    "timeout": "45",
-    "from": "19153206248",
-    "endpoint": [
-      {
-        "type": "phone",
-        "number": "8314306248",
-        "dtmfAnswer": "2p02p"
-      }
-    ]
+    "action": "talk",
+    "text": "Press 1 for maybe and 2 for not sure followed by the hash key",
+    "voiceName": "Amy",
+    "bargeIn": true
+  },
+  {
+    "action": "input",
+    "submitOnHash": true,
+    "eventUrl": ["https://example.com/ivr"]
   }
 ]
